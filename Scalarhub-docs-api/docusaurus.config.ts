@@ -12,7 +12,7 @@ const config: Config = {
   url: 'https://kmanasagithub.github.io',
   baseUrl: '/',
   organizationName: 'kmanasagithub',
-  projectName: 'guides',
+  projectName: 'docs',
 
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'ignore',
