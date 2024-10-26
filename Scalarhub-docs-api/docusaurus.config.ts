@@ -10,7 +10,7 @@ const config: Config = {
   tagline: '',
   favicon: 'img/favicon.ico',
   url: 'https://kmanasagithub.github.io',
-  baseUrl: '/',
+  baseUrl: '/docs/',
   organizationName: 'kmanasagithub',
   projectName: 'docs',
 
