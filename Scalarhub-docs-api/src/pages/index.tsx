@@ -5,5 +5,5 @@ import { Redirect } from '@docusaurus/router';
 
 // Default export for Home component
 export default function Home(): JSX.Element {
-  return <Redirect to="/guides/Overview" />;
+  return <Redirect to="docs/guides/Overview" />;
 }
