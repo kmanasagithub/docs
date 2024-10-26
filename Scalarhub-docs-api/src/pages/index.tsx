@@ -17,7 +17,7 @@ const Home: React.FC = () => {
 
   useEffect(() => {
     // Redirect to the desired path
-    history.push('/guides/Overview');
+    history.push('docs/guides/Overview');
   }, [history]);
 
   return null;
