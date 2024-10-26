@@ -11,7 +11,7 @@ const config: Config = {
   favicon: 'img/favicon.ico',
   url: 'https://kmanasagithub.github.io',
   baseUrl: '/',
-  organizationName: 'scalarHubTech',
+  organizationName: 'kmanasagithub',
   projectName: 'guides',
 
   onBrokenLinks: 'ignore',
