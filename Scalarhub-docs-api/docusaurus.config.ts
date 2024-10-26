@@ -97,7 +97,7 @@ const config: Config = {
       {
         id: 'guides', // Unique ID for the API reference section
         path: 'guides', // Folder containing API reference docs
-        routeBasePath: '/guides/', // Base URL for API reference
+        routeBasePath: 'docs/guides/', // Base URL for API reference
         sidebarPath: require.resolve('./sidebarGuides.ts'), // Custom sidebar for API reference
         // editUrl: 'https://github.com/your-repo/edit/main/apireference/',
       },
