@@ -125,7 +125,7 @@ const config: Config = {
           sidebarId: 'guideSidebar',
           label: "Guides",
           position: "left",
-          activeBasepath: "/guides/",
+          activeBasepath: "/guides",
         },
         {
           to:"/reference",
