@@ -121,7 +121,7 @@ const config: Config = {
       },
       items: [
         {
-          href: "https://scalarhubtech.github.io/docs/guides/Overview",
+          href: "/guides/Overview/",
           sidebarId: 'guideSidebar',
           label: "Guides",
           position: "left",
