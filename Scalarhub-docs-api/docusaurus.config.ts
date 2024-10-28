@@ -121,7 +121,7 @@ const config: Config = {
       },
       items: [
         {
-          href: "Overview",
+          href: "/guides/Overview",
           sidebarId: 'guideSidebar',
           label: "Guides",
           position: "left",
