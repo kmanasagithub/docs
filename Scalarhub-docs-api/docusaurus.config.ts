@@ -59,7 +59,10 @@ const config: Config = {
           },
           customer: {
             specPath: 'examples/customer.yaml',
-            outputDir: 'docs/Endpoints/Customers'       
+            outputDir: 'docs/Endpoints/Customers',
+            swaggerOptions: {
+              supportedSubmitMethods: ['get', 'post', 'put', 'delete'],
+            },      
           },
           entity: {
             specPath: 'examples/entity.yaml', 
