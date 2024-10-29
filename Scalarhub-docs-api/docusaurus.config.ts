@@ -48,9 +48,6 @@ const config: Config = {
       {
         id: "openapi", // Keep the ID as it is
         docsPluginId: "classic",
-        swaggerOptions: {
-          supportedSubmitMethods: ['get', 'post', 'put', 'delete'],
-        }, 
         config: {
           account: {
             specPath: 'examples/account.yaml', 
