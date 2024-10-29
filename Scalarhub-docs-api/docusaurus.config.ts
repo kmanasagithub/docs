@@ -47,7 +47,10 @@ const config: Config = {
       "docusaurus-plugin-openapi-docs",
       {
         id: "openapi", // Keep the ID as it is
-        docsPluginId: "classic", // Reference the classic theme's ID
+        docsPluginId: "classic",
+        swaggerOptions: {
+          supportedSubmitMethods: ['get', 'post', 'put', 'delete'],
+        }, 
         config: {
           account: {
             specPath: 'examples/account.yaml', 
@@ -59,10 +62,7 @@ const config: Config = {
           },
           customer: {
             specPath: 'examples/customer.yaml',
-            outputDir: 'docs/Endpoints/Customers',
-            swaggerOptions: {
-              supportedSubmitMethods: ['get', 'post', 'put', 'delete'],
-            },      
+            outputDir: 'docs/Endpoints/Customers',     
           },
           entity: {
             specPath: 'examples/entity.yaml', 
