@@ -96,6 +96,17 @@ const config: Config = {
       },
     ],
     [
+      'docusaurus-plugin-openapi',
+      {
+        id: 'customer',
+        path: 'examples/customer.yaml',
+        routeBasePath: 'docs/Endpoints/Customers',
+        swaggerOptions: {
+          supportedSubmitMethods: ['get', 'post', 'put', 'delete']
+        },
+      },
+    ],
+    [
       '@docusaurus/plugin-content-docs',
       {
         id: 'guides', // Unique ID for the API reference section
