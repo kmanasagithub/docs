@@ -5,8 +5,11 @@ const sidebarsGuides = {
         'core-concepts',
       {
         type: 'category',
-        label: 'MarkDown',
-        items: ['MarkDown/Intro'],
+        label: 'Quickstart-guide',
+        items: [
+          'Quickstart-guide/introduction',
+          'Quickstart-guide/ingest-an-event',
+        ],
       },
         'login-and-authentication',
         'using-postman',
