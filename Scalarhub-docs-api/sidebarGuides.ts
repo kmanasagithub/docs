@@ -19,7 +19,7 @@ const sidebarsGuides = {
           label: 'Events and metrics',
           items: [
             'Events and metrics/ingest-usage-events',
-            'Events and metrics/ingest-with-s3-or-gcs-cloud-storage',
+            'Events and metrics/integrate-with-s3-or-gcs-cloud-storage',
           ],
         },
         {
