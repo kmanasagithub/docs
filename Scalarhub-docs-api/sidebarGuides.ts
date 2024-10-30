@@ -1,11 +1,15 @@
 const sidebarsGuides = {
     guidesSidebar: [
         'Overview',
+        'Core concepts',
       {
         type: 'category',
         label: 'MarkDown',
-        items: ['MarkDown/Intro'], // 'getting-started' will be the first page
+        items: ['MarkDown/Intro'],
       },
+        'Login And Authentication',
+        'Using Postman',
+        'SDK'
     ],
   };
   

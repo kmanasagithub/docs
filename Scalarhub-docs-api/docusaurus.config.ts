@@ -42,7 +42,11 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
+  themes: [
+    'docusaurus-theme-openapi-docs', // Add the theme here
+  ],
   plugins: [
+   
     [
       "docusaurus-plugin-openapi-docs",
       {
@@ -92,17 +96,14 @@ const config: Config = {
         },
       },
     ],
-    [
-      'docusaurus-plugin-openapi',
-      {
-        id: 'customer',
-        path: 'examples/customer.yaml',
-        routeBasePath: 'docs/Endpoints/Customers',
-        swaggerOptions: {
-          supportedSubmitMethods: ['get', 'post', 'put', 'delete']
-        },
-      },
-    ],
+    // [
+    //   'docusaurus-plugin-openapi',
+    //   {
+    //     id: 'customer',
+    //     path: 'examples/customer.yaml',
+    //     routeBasePath: 'docs/Endpoints/Customers',
+    //   },
+    // ],
     [
       '@docusaurus/plugin-content-docs',
       {
@@ -115,11 +116,8 @@ const config: Config = {
     ],
     
   ],
-  
 
-  themes: ["docusaurus-theme-openapi-docs"],
   themeConfig: {
-    // Replace with your project's social card
     navbar: {
       logo: {
         alt: 'ScalarHub Logo',
