@@ -2,7 +2,7 @@ const sidebarsGuides = {
     guidesSidebar: [
       {
         type: 'doc',
-        label: 'Overview'
+        id: 'Overview'
       },
         // 'Overview',
         // 'Core concepts',
