@@ -7,8 +7,8 @@ const sidebarsGuides = {
         type: 'category',
         label: 'Quickstart-guide',
         items: [
-          'Quickstart-guide/introduction',
-          'Quickstart-guide/ingest-an-event',
+          'Quickstart guide/introduction',
+          'Quickstart guide/ingest-an-event',
         ],
       },
         'login-and-authentication',
@@ -16,10 +16,10 @@ const sidebarsGuides = {
         'sdk',
         {
           type: 'category',
-          label: 'Events and metrices',
+          label: 'Events and metrics',
           items: [
-            'Events and metrices/ingest-usage-events',
-            'Events and metrices/ingest-with-s3-or-gcs-cloud-storage',
+            'Events and metrics/ingest-usage-events',
+            'Events and metrics/ingest-with-s3-or-gcs-cloud-storage',
           ],
         },
         {
