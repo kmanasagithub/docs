@@ -13,7 +13,23 @@ const sidebarsGuides = {
       },
         'login-and-authentication',
         'using-postman',
-        'sdk'
+        'sdk',
+        {
+          type: 'category',
+          label: 'Events and metrices',
+          items: [
+            'Events and metrices/ingest-usage-events',
+            'Events and metrices/ingest-with-s3-or-gcs-cloud-storage',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Plans and subscriptions',
+          items: [
+            'Plans and subscriptions/build-your-product-catalog',
+            'Plans and subscriptions/creating-subscriptions',
+          ],
+        },
     ],
   };
   

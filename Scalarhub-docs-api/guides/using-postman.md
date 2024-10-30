@@ -1,5 +1,5 @@
 ---
 id: using-postman
-title: using Postman
+title: Using Postman
 sidebar_position: 5
 ---
