@@ -1,15 +1,19 @@
 const sidebarsGuides = {
     guidesSidebar: [
-        'Overview',
-        'Core concepts',
+      {
+        type: 'doc',
+        label: 'Overview'
+      },
+        // 'Overview',
+        // 'Core concepts',
       {
         type: 'category',
         label: 'MarkDown',
         items: ['MarkDown/Intro'],
       },
-        'Login And Authentication',
-        'Using Postman',
-        'SDK'
+        // 'Login And Authentication',
+        // 'Using Postman',
+        // 'SDK'
     ],
   };
   
