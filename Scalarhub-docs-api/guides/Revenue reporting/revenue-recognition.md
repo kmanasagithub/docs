@@ -1,5 +1,5 @@
 ---
 id: revenue-recognition
-title: Examples: Revenue Recognition
+title: Revenue Recognition
 sidebar_position: 2
 ---
