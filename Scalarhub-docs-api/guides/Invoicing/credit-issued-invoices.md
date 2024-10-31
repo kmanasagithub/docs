@@ -1,5 +1,5 @@
 ---
-id: credit-draft-invoices
-title: Credit draft invoices
+id: credit-issued-invoices
+title: Credit issued invoices
 sidebar_position: 5
 ---
