@@ -9,6 +9,11 @@ const sidebarsGuides = {
         items: [
           'Quickstart guide/introduction',
           'Quickstart guide/ingest-an-event',
+          'Quickstart guide/create-a-simple-metric',
+          'Quickstart guide/configure-your-price',
+          'Quickstart guide/subscribe-a-customer',
+          'Quickstart guide/test-your-invoicing-setup',
+          'Quickstart guide/set-up-prepaid-credits',
         ],
       },
         'login-and-authentication',
@@ -20,6 +25,12 @@ const sidebarsGuides = {
           items: [
             'Events and metrics/ingest-usage-events',
             'Events and metrics/integrate-with-s3-or-gcs-cloud-storage',
+            'Events and metrics/import-from-segment',
+            'Events and metrics/construct-usage-metrics',
+            'Events and metrics/alias-customer-ids',
+            'Events and metrics/scale-ingestion-throughput',
+            'Events and metrics/querying-data-with-sql',
+            'Events and metrics/backfill-and-amend-events'
           ],
         },
         {
