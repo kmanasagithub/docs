@@ -66,7 +66,7 @@ const sidebarsGuides = {
           items: [
             'Revenue reporting/revenue-reporting-methodology',
             'Revenue reporting/revenue-recognition',
-            'Revenue-reporting/revenu-pivots'
+            'Revenue-reporting/revenue-pivots'
           ],
         },
         
