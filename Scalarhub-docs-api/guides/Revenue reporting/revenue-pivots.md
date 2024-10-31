@@ -1,5 +1,5 @@
 ---
 id: revenue-pivots
-title: Revenue Recognition
+title: Revenue pivots
 sidebar_position: 3
 ---
