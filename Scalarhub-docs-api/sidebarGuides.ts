@@ -41,6 +41,34 @@ const sidebarsGuides = {
             'Plans and subscriptions/creating-subscriptions',
           ],
         },
+        {
+          type: 'category',
+          label: 'Invoicing',
+          items:[
+            'Invoicing/introduction',
+            'Invoicing/structure-and-lifecycle',
+            'Invoicing/configure-payments-and-collection',
+            'Invoicing/adjust-draft-invoices',
+            'Invoicing/credit-issued-invoices'
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Integrations and exports',
+          items: [
+            'Integrations and exports/setting-up-a-connection-in-scalarhub',
+            'Integrations and exports/salesforce'
+          ] 
+        },
+        {
+          type: 'category',
+          label: 'Revenue reporting',
+          items: [
+            'Revenue reporting/revenue-reporting-methodology',
+            'Revenue reporting/revenue-recognition','Revenue-reporting/revenue -pivots'
+          ],
+        },
+        
     ],
   };
   
