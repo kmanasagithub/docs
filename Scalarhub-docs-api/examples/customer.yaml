@@ -348,7 +348,6 @@ components:
     BearerAuth:
       type: http
       scheme: bearer
-      # bearerFormat: JWT
   schema:
     Customer:
       type: object
