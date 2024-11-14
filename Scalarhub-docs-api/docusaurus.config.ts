@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const path = require('path');
 import type * as Plugin from "@docusaurus/types/src/plugin";
 import type * as OpenApiPlugin from "docusaurus-plugin-openapi-docs";
-// import type * as openApiTheme from "docusaurus-theme-openapi-docs";
+import type * as openApiTheme from "docusaurus-theme-openapi-docs";
 
 
 const config: Config = {
@@ -116,9 +116,9 @@ const config: Config = {
       },
     ],
   ],
-  //  themes: [
-  //   'docusaurus-theme-openapi-docs', 
-  // ],
+   themes: [
+    'docusaurus-theme-openapi-docs', 
+  ],
   themeConfig: {
     navbar: {
       logo: {
