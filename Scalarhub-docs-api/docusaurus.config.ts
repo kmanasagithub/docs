@@ -44,10 +44,7 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
-  themes: [
-    'docusaurus-theme-openapi-docs', 
-    'openApiTheme'
-  ],
+ 
   plugins: [
    
     [
@@ -118,7 +115,9 @@ const config: Config = {
         // editUrl: 'https://github.com/your-repo/edit/main/apireference/',
       },
     ],
-    
+  ],
+   themes: [
+    'docusaurus-theme-openapi-docs', 
   ],
   themeConfig: {
     navbar: {
