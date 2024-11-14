@@ -29,7 +29,7 @@ paths:
           required: true
           description: Bearer token for authentication
           schema:
-            type: string
+            $ref: "#/components/securitySchemas/BearerAuth"
             example: "Bearer YOUR_TOKEN_HERE"
       requestBody:
         content:
