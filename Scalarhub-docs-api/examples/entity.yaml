@@ -20,6 +20,14 @@ paths:
         - Entities
       summary: Create Entity
       dscription: Create a new entity by providing necessary details such as name, address, phone and tax_id.
+      parameters:
+        - name: Authorization
+          in: header
+          required: true
+          description: Bearer token for authentication
+          schema:
+            $ref: "#/components/securitySchemas/BearerAuth"
+            example: "Bearer YOUR_TOKEN_HERE"
       requestBody:
         content:
           application/json:
@@ -234,6 +242,11 @@ paths:
           description: Internal Server Error
 
 components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
   schemas:
     Entity:
       type: object

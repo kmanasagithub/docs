@@ -20,6 +20,14 @@ paths:
         - Products
       summary: Create Product
       description: This endpoint allows you to add a new product to the scalartax's list of products.
+      parameters:
+        - name: Authorization
+          in: header
+          required: true
+          description: Bearer token for authentication
+          schema:
+            $ref: "#/components/securitySchemas/BearerAuth"
+            example: "Bearer YOUR_TOKEN_HERE"
       requestBody:
         content:
           application/json:
@@ -250,6 +258,11 @@ paths:
         '500':
           description: Internal Server Error
 components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
   schemas:
     Products:
       type: array
