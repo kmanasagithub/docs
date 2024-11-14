@@ -22,8 +22,6 @@ paths:
         - Customers
       summary: Create Customer
       description: This endpoint allows you to add a new customer to the scalartax.
-      security:
-        - BearerAuth: []
       requestBody:
         content:
           application/json:
