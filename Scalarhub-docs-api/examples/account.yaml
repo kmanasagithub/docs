@@ -23,6 +23,14 @@ paths:
         - Accounts
       summary: Create Account
       description: This endpoint allows you to create a new ScalarTax Account.
+      parameters:
+        - name: Authorization
+          in: header
+          required: true
+          description: Bearer token for authentication
+          schema:
+            type: string
+            example: "Bearer YOUR_TOKEN_HERE"
       requestBody:
         content:
           application/json:
