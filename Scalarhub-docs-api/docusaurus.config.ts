@@ -4,6 +4,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 const path = require('path');
 import type * as Plugin from "@docusaurus/types/src/plugin";
 import type * as OpenApiPlugin from "docusaurus-plugin-openapi-docs";
+const { openApiTheme } = require('docusaurus-theme-openapi-docs');
+
 
 const config: Config = {
   title: 'ScalarHub',
@@ -43,7 +45,8 @@ const config: Config = {
     ],
   ],
   themes: [
-    'docusaurus-theme-openapi-docs', // Add the theme here
+    'docusaurus-theme-openapi-docs', 
+    'openApiTheme'
   ],
   plugins: [
    
@@ -96,6 +99,7 @@ const config: Config = {
         },
       },
     ],
+
     // [
     //   'docusaurus-plugin-openapi',
     //   {
@@ -116,7 +120,6 @@ const config: Config = {
     ],
     
   ],
-
   themeConfig: {
     navbar: {
       logo: {
