@@ -1,0 +1,35 @@
+---
+sidebar_position: 6
+id: Error response format
+---
+
+# Errors
+
+How the ComplyAdvantage Mesh API handles error responses
+
+Our APIs utilize HTTP status codes for error management. In the event of a failed API call, we will return a 4xx or 5xx status code.
+
+## Error codes
+
+These are the status codes returned from all endpoints. Some endpoints may have additional errors which are detailed within the respective endpoint documentation.
+
+| Status | Description |
+|--------|-------------|
+| 401    | **Unauthorized** - Please ensure your authentication token is correct |
+| 403    | **Permissions error** - You do not have the correct permissions to access the resource |
+| 404    | **Not found** - The requested resource could not be found |
+| 409    | **Conflict** - The request conflicts with another request |
+| 429    | **Too many requests** - Too many requests in a given amount of time (rate limiting). |
+| 500    | **Internal server error** - The server has encountered an error. If this persists, please contact support. |
+
+## Error structures
+
+These are the typical error structures you will receive for each error code.
+
+```json
+{
+  "title": "Unauthorized",
+  "status": 401,
+  "detail": "Invalid authentication for resource."
+}
+
