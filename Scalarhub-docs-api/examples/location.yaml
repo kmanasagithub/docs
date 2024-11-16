@@ -25,7 +25,7 @@ paths:
           required: true
           description: Bearer token for authentication
           schema:
-            $ref: "#/components/securitySchemas/BearerAuth"
+            $ref: "#/components/securitySchemes/BearerAuth"
             example: "Bearer YOUR_TOKEN_HERE"
       requestBody:
         content:

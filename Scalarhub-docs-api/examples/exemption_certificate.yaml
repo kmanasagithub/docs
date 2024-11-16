@@ -19,14 +19,6 @@ paths:
       tags:
         - Exemption Certificates
       summary: Create Exemption Certificate
-      parameters:
-        - name: Authorization
-          in: header
-          required: true
-          description: Bearer token for authentication
-          schema:
-            $ref: "#/components/securitySchemas/BearerAuth"
-            example: "Bearer YOUR_TOKEN_HERE"
       requestBody:
         content:
           application/json:

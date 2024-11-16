@@ -20,14 +20,6 @@ paths:
         - Customers
       summary: Create Customer
       description: This endpoint allows you to add a new customer to the scalartax.
-      parameters:
-        - name: Authorization
-          in: header
-          required: true
-          description: Bearer token for authentication
-          schema:
-            $ref: "#/components/securitySchemas/BearerAuth"
-            example: "Bearer YOUR_TOKEN_HERE"
       requestBody:
         content:
           application/json:

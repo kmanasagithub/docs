@@ -13,21 +13,15 @@ servers:
     description: Production server
   - url: http://{{base_url}}/
     description: Local server
+security:
+  - BearerAuth: []
 paths:
   /scalartax/entities/:
     post:
       tags:
         - Entities
       summary: Create Entity
-      dscription: Create a new entity by providing necessary details such as name, address, phone and tax_id.
-      parameters:
-        - name: Authorization
-          in: header
-          required: true
-          description: Bearer token for authentication
-          schema:
-            $ref: "#/components/securitySchemas/BearerAuth"
-            example: "Bearer YOUR_TOKEN_HERE"
+      description: Create a new entity by providing necessary details such as name, address, phone and tax_id.
       requestBody:
         content:
           application/json:
