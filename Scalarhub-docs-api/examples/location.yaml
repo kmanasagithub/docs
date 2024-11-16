@@ -13,20 +13,14 @@ servers:
     description: Production server
   - url: http://{{base_url}}/
     description: Local server
+security:
+  - BearerAuth: []
 paths:
   /scalartax/locations/:
     post:
       tags:
         - Locations
       summary: Create Location
-      parameters:
-        - name: Authorization
-          in: header
-          required: true
-          description: Bearer token for authentication
-          schema:
-            $ref: "#/components/securitySchemes/BearerAuth"
-            example: "Bearer YOUR_TOKEN_HERE"
       requestBody:
         content:
           application/json:
