@@ -1,7 +1,7 @@
 {
     "index_name": "prod_scalarhub.ai",
     "start_urls": [
-      "https://kmanasagithub.github.io/docs/guides/Overview"
+      "https://kmanasagithub.github.io/"
     ],
     "sitemap_urls": [
       "https://docusaurus.io/sitemap.xml"
