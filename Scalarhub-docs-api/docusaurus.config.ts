@@ -107,14 +107,6 @@ const config: Config = {
   ],
    themes: [
     'docusaurus-theme-openapi-docs', 
-    
-  ],
-  themeConfig: {
-    // algolia:{
-    //   apiKey:'b20f2cf28e2a17f6fa3616a6593e14f5',
-    //   indexName:'prod_scalarhub.ai',
-    //   appId:'WYFUNULVHN',
-    // },
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
       /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
@@ -128,6 +120,14 @@ const config: Config = {
         // ```
       }),
     ],
+  ],
+  themeConfig: {
+    // algolia:{
+    //   apiKey:'b20f2cf28e2a17f6fa3616a6593e14f5',
+    //   indexName:'prod_scalarhub.ai',
+    //   appId:'WYFUNULVHN',
+    // },
+    
     navbar: {
       logo: {
         alt: 'ScalarHub Logo',
