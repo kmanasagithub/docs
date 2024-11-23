@@ -44,7 +44,6 @@ const config: Config = {
   ],
  
   plugins: [
-    ['@docusaurus-theme-search-algolia'],
     [
       "docusaurus-plugin-openapi-docs",
       {
