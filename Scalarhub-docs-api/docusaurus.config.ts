@@ -1,4 +1,4 @@
-import {themes as prismThemes} from 'prism-react-renderer';
+// import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 const path = require('path');
@@ -44,12 +44,12 @@ const config: Config = {
   ],
  
   plugins: [
-    [
-      require.resolve("@easyops-cn/docusaurus-search-local"),
-      ({
-        hashed: true,
-      }),
-    ],
+    // [
+    //   require.resolve("@easyops-cn/docusaurus-search-local"),
+    //   ({
+    //     hashed: true,
+    //   }),
+    // ],
     [
       "docusaurus-plugin-openapi-docs",
       {
@@ -125,6 +125,12 @@ const config: Config = {
     '@docusaurus/theme-live-codeblock',
   ],
   themeConfig: {
+    algolia:{
+      apiKey:'b20f2cf28e2a17f6fa3616a6593e14f5',
+      indexName:'prod_scalahub.ai',
+      contextualSearch: true,
+      appId:' WYFUNULVHN',
+    },
     navbar: {
       logo: {
         alt: 'ScalarHub Logo',
