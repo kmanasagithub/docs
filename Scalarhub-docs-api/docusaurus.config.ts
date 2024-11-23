@@ -44,7 +44,7 @@ const config: Config = {
   ],
  
   plugins: [
-    ['@docusaurus/theme-search-algolia'],
+    ['@docusaurus-theme-search-algolia'],
     [
       "docusaurus-plugin-openapi-docs",
       {
@@ -94,15 +94,6 @@ const config: Config = {
         },
       },
     ],
-
-    // [
-    //   'docusaurus-plugin-openapi',
-    //   {
-    //     id: 'customer',
-    //     path: 'examples/customer.yaml',
-    //     routeBasePath: 'docs/Endpoints/Customers',
-    //   },
-    // ],
     [
       '@docusaurus/plugin-content-docs',
       {
