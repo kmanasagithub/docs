@@ -44,7 +44,12 @@ const config: Config = {
   ],
  
   plugins: [
-   
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      ({
+        hashed: true,
+      }),
+    ],
     [
       "docusaurus-plugin-openapi-docs",
       {
@@ -113,9 +118,11 @@ const config: Config = {
         // editUrl: 'https://github.com/your-repo/edit/main/apireference/',
       },
     ],
+
   ],
    themes: [
     'docusaurus-theme-openapi-docs', 
+    '@docusaurus/theme-live-codeblock',
   ],
   themeConfig: {
     navbar: {
@@ -152,7 +159,9 @@ const config: Config = {
         },
       ],
     },
-    
+    liveCodeBlock: {
+      playgroundPosition: 'bottom', // You can set it to 'top', 'bottom', 'none'
+    },
   } satisfies Preset.ThemeConfig,
   stylesheets: [
     {
