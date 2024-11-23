@@ -122,13 +122,11 @@ const config: Config = {
   ],
    themes: [
     'docusaurus-theme-openapi-docs', 
-    '@docusaurus/theme-live-codeblock',
   ],
   themeConfig: {
     algolia:{
       apiKey:'b20f2cf28e2a17f6fa3616a6593e14f5',
       indexName:'prod_scalahub.ai',
-      contextualSearch: true,
       appId:' WYFUNULVHN',
     },
     navbar: {
