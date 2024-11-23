@@ -44,12 +44,7 @@ const config: Config = {
   ],
  
   plugins: [
-    // [
-    //   require.resolve("@easyops-cn/docusaurus-search-local"),
-    //   ({
-    //     hashed: true,
-    //   }),
-    // ],
+    ['@docusaurus/theme-search-algolia'],
     [
       "docusaurus-plugin-openapi-docs",
       {
@@ -122,12 +117,13 @@ const config: Config = {
   ],
    themes: [
     'docusaurus-theme-openapi-docs', 
+    
   ],
   themeConfig: {
     algolia:{
       apiKey:'b20f2cf28e2a17f6fa3616a6593e14f5',
-      indexName:'prod_scalahub.ai',
-      appId:' WYFUNULVHN',
+      indexName:'prod_scalarhub.ai',
+      appId:'WYFUNULVHN',
     },
     navbar: {
       logo: {
