@@ -1,10 +1,10 @@
 {
-    "index_name": "prod_scalarhub.ai",
+    "index_name": "scalarhub-docs",
     "start_urls": [
-      "https://kmanasagithub.github.io/"
+      "https://kmanasagithub.github.io/docs/"
     ],
     "sitemap_urls": [
-      "https://kmanasagithub.github.io/sitemap.xml"
+      "https://kmanasagithub.github.io/docs/sitemap.xml"
     ],
     "sitemap_alternate_links": true,
     "stop_urls": [

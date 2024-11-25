@@ -107,29 +107,13 @@ const config: Config = {
   ],
    themes: [
     'docusaurus-theme-openapi-docs', 
-    [
-      require.resolve("@easyops-cn/docusaurus-search-local"),
-      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
-      ({
-        // ... Your options.
-        // `hashed` is recommended as long-term-cache of index file is possible.
-        hashed: true,
-        indexBlog: false,
-
-        // For Docs using Chinese, The `language` is recommended to set to:
-        // ```
-        // language: ["en", "zh"],
-        // ```
-      }),
-    ],
   ],
   themeConfig: {
-    // algolia:{
-    //   apiKey:'b20f2cf28e2a17f6fa3616a6593e14f5',
-    //   indexName:'prod_scalarhub.ai',
-    //   appId:'WYFUNULVHN',
-    // },
-    
+    algolia:{
+      apiKey:'96280c372191c326291b1af64b0472b3',
+      indexName:'scalarhub-docs',
+      appId:'WYFUNULVHN',
+    },
     navbar: {
       logo: {
         alt: 'ScalarHub Logo',
