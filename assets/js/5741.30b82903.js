@@ -1,1 +1,0 @@
-(self.webpackChunkscalarhub_docs_api=self.webpackChunkscalarhub_docs_api||[]).push([[5741],{45741:()=>{}}]);
