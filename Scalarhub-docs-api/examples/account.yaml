@@ -23,6 +23,7 @@ paths:
         - Accounts
       summary: Create Account
       description: This endpoint allows you to create a new ScalarTax Account.
+      header: []
       requestBody:
         content:
           application/json:
@@ -33,6 +34,7 @@ paths:
       responses:
         '201':
           description: Account Created Successfully.
+         
           content:
             application/json:
               schema:
@@ -62,9 +64,53 @@ paths:
         - Accounts
       summary: List Accounts
       description: This endpoint retrieves a list of ScalarTax accounts.
+      header: []
       responses:
         '200':
           description: OK
+          header:
+            - key: x-frame-options
+              value: SAMEORIGIN
+              uuid: ec53bf88-2a67-4d68-bcad-9221efe5699a
+            - key: x-xss-protection
+              value: "0"
+              uuid: 79792303-840b-4783-b3d7-d6cb427b5911
+            - key: x-content-type-options
+              value: nosniff
+              uuid: 06a7f090-4e9e-44e4-9262-c01ac65793c6
+            - key: x-permitted-cross-domain-policies
+              value: none
+              uuid: b4a4a576-cbe8-4770-a45c-bf6c44dec205
+            - key: referrer-policy
+              value: strict-origin-when-cross-origin
+              uuid: 92f23512-c6fe-4d60-a7c0-fa03b7e2dd1a
+            - key: content-type
+              value: application/json; charset=utf-8
+              uuid: 46bad098-affc-4a85-83d2-72951688dfd4
+            - key: vary
+              value: Accept, Origin
+              uuid: 2e4e9ef2-579d-4381-8ecb-62d936572ad9
+            - key: etag
+              value: W/"ba5e8883681a47444cb1db132a019818"
+              uuid: a4cd75af-56bf-4a72-97b2-955bff40ee3b
+            - key: cache-control
+              value: max-age=0, private, must-revalidate
+              uuid: a574141f-eb89-45f7-968f-700da6ee29fd
+            - key: x-request-id
+              value: 3c595bfd-e970-4cc2-817c-b6084ca808b5
+              uuid: 5ad1a525-0a19-4af6-8031-39cb34b1440b
+            - key: x-runtime
+              value: "0.229474"
+              uuid: e68f83e0-61c9-4e31-9ce2-adeab23079e8
+            - key: server-timing
+              value:
+                start_processing.action_controller;dur=0.01, sql.active_record;dur=0.57,
+                instantiation.active_record;dur=0.45,
+                process_action.action_controller;dur=15.39
+              uuid: 56fade47-e47f-4286-91c0-7aae197d21cb
+            - key: Content-Length
+              value: "1362"
+              uuid: 55626897-ab2d-4aa3-bf77-c9711e96ffa7
           content:
             application/json:
               schema:
@@ -103,6 +149,7 @@ paths:
         - Accounts
       summary: Fetch Account
       description: This endpoint retrieves the details of a specific ScalarTax account.
+      header: []
       parameters:
         - name: id
           in: path
@@ -112,6 +159,49 @@ paths:
       responses:
         '200':
           description: OK.
+          header:
+              - key: x-frame-options
+                value: SAMEORIGIN
+                uuid: ed95c705-af13-45e1-a392-e11170edf565
+              - key: x-xss-protection
+                value: "0"
+                uuid: e11e64b6-56ec-4359-ac56-c47b1d2d1927
+              - key: x-content-type-options
+                value: nosniff
+                uuid: 42226139-fa7b-457f-857c-f42747fe4ec6
+              - key: x-permitted-cross-domain-policies
+                value: none
+                uuid: 0e9d136b-75ec-4a5e-afb7-720684779c0e
+              - key: referrer-policy
+                value: strict-origin-when-cross-origin
+                uuid: 48e812d8-21a1-4d9b-a84f-408c19b61963
+              - key: content-type
+                value: application/json; charset=utf-8
+                uuid: cd5ccc2f-c7e1-44b6-be88-b4a590562c09
+              - key: vary
+                value: Accept, Origin
+                uuid: 8baa9ad8-d444-409b-87cf-6fe24fdeff49
+              - key: etag
+                value: W/"0b9a2001c66edf2122aa463a8a77898d"
+                uuid: f732557f-6d34-4ce3-ad22-7227c65335ac
+              - key: cache-control
+                value: max-age=0, private, must-revalidate
+                uuid: 60c2610b-0656-4791-a127-002d368b21cf
+              - key: x-request-id
+                value: dbda911a-1f15-49a9-854d-abae6f43868f
+                uuid: a72f2baf-8cd3-4b29-a1f2-1ce76b632c61
+              - key: x-runtime
+                value: "0.221737"
+                uuid: cfed02f0-eb7d-4d8f-bff6-ccb90448b27d
+              - key: server-timing
+                value:
+                  start_processing.action_controller;dur=0.01, sql.active_record;dur=0.78,
+                  instantiation.active_record;dur=0.08,
+                  process_action.action_controller;dur=5.70
+                uuid: ed337ab4-021f-430c-9abe-e1453c389330
+              - key: Content-Length
+                value: "170"
+                uuid: ca7e5a4e-db81-4cbb-a2ef-8dd3ee565ff2
           content:
             application/json:
               schema:
